@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    font-family: Arial, sans-serif;
+    overflow: hidden; 
+}
+
+body {
+    position: relative;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding-top: 20px; 
+    z-index: 2; 
+}
+
+input {
+    padding: 10px;
+    font-size: 1rem;
+    border: 2px solid #333;
+    border-radius: 5px;
+    width: 30rem; 
+    outline: none;
+    border-radius: 1rem;
+    height: 2.5rem;
+    
+}
+
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 150vw;
+    height: 150vh;
+    background-image: url('./assets/drop-3698073.jpg'); 
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    opacity: 3.4;
+    z-index: 1; 
+}
+.suggestionnBox {
+    width: 30rem;
+    max-height: 20rem;
+    background-color: white;
+    color: black;
+    position: absolute;
+    top: 4.3rem;
+    border-radius: 0.5rem;
+    padding: 0.4rem 1rem;
+    overflow: auto;
+}
+li{
+    list-style: none;
+    margin-bottom: 0.4rem;
+    padding: 0.4rem;
+}
+li:hover{
+    background-color: rgba(174, 174, 174, 0.265);
+    cursor: pointer;
+}
+
